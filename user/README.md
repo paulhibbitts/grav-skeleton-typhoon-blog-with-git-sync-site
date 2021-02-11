@@ -6,14 +6,19 @@ This skeleton serves as a basic content skeleton, with an inherited Typhoon them
 
 ## 🚀 Quick Install Instructions
 
-1. Download and unzip the `grav-skeleton-inherited-typhoon-theme-blog-site.zip` Skeleton package and unzip it.
+**Pre-flight Checklist**  
 
-2. View the resulting site in your Browser and setup your Admin account.
+1. Licensed Grav Premium Typhoon Theme
+2. Web server login credentials (username and password)
 
-3. Go to the `License Manager` panel and import your `Typhoon` license.
+**Installation Steps**  
 
-4. Go to the `Themes` panel, tap on `+Add` and install your now licensed `Typhoon` theme.
-
-5. Next, return to the `Themes` panel and choose the provided `MyTyphoonTheme` inherited theme as your Active Theme.
-
-5. And that's it! You can learn more about inherited themes at https://learn.getgrav.org/17/themes/customization#theme-inheritance
+1. Download the ready-to-run [Typhoon Blog with Git Sync](https://github.com/paulhibbitts/grav-skeleton-typhoon-blog-with-git-sync-site/archive/main.zip)
+2. Unzip the package onto your desktop  
+3. Copy the entire Grav Open Course Hub folder to your Web server  
+4. Point your browser to the Web server folder  
+5. Create your site administrator account when prompted  
+6. Go to the `License Manager` panel and import your `Typhoon` license.
+7. Go to the `Themes` panel, tap on `+Add` and install your now licensed `Typhoon` theme.
+8. Return to the `Themes` panel and choose the provided `MyTheme` inherited theme as your Active Theme.
+9. And that's it! You can learn more about inherited themes at https://learn.getgrav.org/17/themes/customization#theme-inheritance
