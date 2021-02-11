@@ -1,4 +1,6 @@
 # Grav Specific
+assets/*
+!assets/.*
 cache/*
 !cache/.*
 images/*
