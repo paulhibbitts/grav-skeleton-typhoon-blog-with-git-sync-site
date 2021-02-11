@@ -1,7 +1,7 @@
 <?php
 namespace Grav\Theme;
 use Grav\Common\Theme;
-class MyTyphoon extends Typhoon
+class MyTheme extends Typhoon
 {
 }
 ?>
