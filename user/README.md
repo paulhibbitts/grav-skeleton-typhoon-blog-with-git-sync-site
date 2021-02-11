@@ -4,7 +4,7 @@ This skeleton serves as a basic content skeleton, with an inherited Typhoon them
 
 ![](screenshot.jpg)
 
-## Installation
+## 🚀 Quick Install Instructions
 
 1. Download and unzip the `grav-skeleton-inherited-typhoon-theme-blog-site.zip` Skeleton package and unzip it.
 
