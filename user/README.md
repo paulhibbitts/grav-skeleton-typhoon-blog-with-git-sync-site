@@ -13,7 +13,7 @@ This skeleton serves as a basic content skeleton, with an inherited Typhoon them
 
 **Installation Steps**  
 
-1. Download the ready-to-run [Typhoon Blog with Git Sync](https://github.com/paulhibbitts/grav-skeleton-typhoon-blog-with-git-sync-site/archive/main.zip)
+1. Download the ready-to-run [Typhoon Blog with Git Sync](https://github.com/paulhibbitts/grav-skeleton-typhoon-blog-with-git-sync-site/archive/main.zip) (which does not include the Grav Premium Typhoon theme)
 2. Unzip the package onto your desktop  
 3. Copy the entire Grav Open Course Hub folder to your Web server  
 4. Point your browser to the Web server folder  
