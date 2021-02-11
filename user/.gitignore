@@ -1,11 +1,10 @@
-# Sass
-.sass-cache
-
 # Grav Specific
 data/*
 !data/.*
 accounts/*
 !accounts/.*
+themes/typhoon/*
+!themes/typhoon/.*
 config/security.yaml
 
 # OS Generated
@@ -14,11 +13,3 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *.swp
-
-# phpstorm
-.idea/*
-/config/backups.yaml
-/config/media.yaml
-/config/scheduler.yaml
-/config/streams.yaml
-/config/versions.yaml

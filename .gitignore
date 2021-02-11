@@ -1,3 +1,14 @@
 # Grav Specific
 cache/*
 !cache/.*
+images/*
+!images/.*
+logs/*
+!logs/.*
+
+# OS Generated
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.swp

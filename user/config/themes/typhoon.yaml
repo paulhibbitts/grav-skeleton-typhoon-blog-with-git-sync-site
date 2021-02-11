@@ -2,7 +2,7 @@ colors:
   primary: '#00A0DE'
 notices:
   - content: 'Checkout the **[Start Here page](/start-here)** for more information about Typhoon Theme'
-    enabled: true
+    enabled: false
     only_homepage: true
     type: note
     learn_more_link: '/start-here'
