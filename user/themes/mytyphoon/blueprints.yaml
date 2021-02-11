@@ -1,8 +1,8 @@
-name: MyTyphoon
+name: MyTheme
 version: 1.0.8
 type: theme
-slug: typhoon
-description: MyTyphoon (inherited) theme utilizing the Tailwind 2 CSS framework. This theme requires a licensed Typhoon theme.
+slug: mytheme
+description: An inherited Typhoon with Git Sync theme utilizing the Tailwind 2 CSS framework. This theme requires a licensed Typhoon theme.
 icon: crosshairs
 author:
   name: Paul Hibbitts
