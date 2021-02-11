@@ -14,6 +14,6 @@ This skeleton serves as a basic content skeleton, with an inherited Typhoon them
 
 4. Go to the `Themes` panel, tap on `+Add` and install your now licensed `Typhoon` theme.
 
-5. Next, choose the provided `MyTyphoonTheme` inherited theme as your Active Theme.
+5. Next, return to the `Themes` panel and choose the provided `MyTyphoonTheme` inherited theme as your Active Theme.
 
 5. And that's it! You can learn more about inherited themes at https://learn.getgrav.org/17/themes/customization#theme-inheritance
