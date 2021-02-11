@@ -3,6 +3,8 @@ data/*
 !data/.*
 accounts/*
 !accounts/.*
+plugins/svg-icons/*
+!plugins/svg-icons/.*
 themes/typhoon/*
 !themes/typhoon/.*
 config/security.yaml
