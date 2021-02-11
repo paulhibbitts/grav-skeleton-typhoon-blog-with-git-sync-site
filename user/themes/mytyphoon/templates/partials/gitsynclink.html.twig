@@ -1,0 +1,94 @@
+{# new twig template file - hibbittsdesign.org #}
+{% if config.site.gitsynclink.edittreeurl %}
+  {% if not page.header.hide_git_sync_repo_link %}
+    {% set gitsynclink_url = config.site.gitsynclink.edittreeurl %}
+    {% if config.site.gitsynclink.editlinkicon is empty %}
+      {% if 'github' in gitsynclink_url %}
+        {% set gitsynclink_icon = "github" %}
+      {% elseif 'gitlab' in gitsynclink_url %}
+        {% set gitsynclink_icon = "gitlab" %}
+      {% elseif 'bitbucket' in gitsynclink_url %}
+        {% set gitsynclink_icon = "bitbucket" %}
+      {% else %}
+        {% set gitsynclink_icon = "git" %}
+      {% endif %}
+    {% else %}
+      {% set gitsynclink_icon = config.site.gitsynclink.editlinkicon %}
+    {% endif %}
+    {% if config.site.gitsynclink.typeofgitsyncrepolink == 'view' %}
+      {% if config.site.gitsynclink.editlinktext is empty %}
+        {% set gitsynclink_text = 'View Content Repository' %}
+      {% else %}
+        {% set gitsynclink_text = config.site.gitsynclink.editlinktext %}
+      {% endif %}
+      <a class="newwindow external-link" href="{{ gitsynclink_url }}" title="{{ gitsynclink_text }}" target="_blank">
+      <i class="fa fa-{{ gitsynclink_icon }}" aria-hidden="true"></i>
+      {{ gitsynclink_text }}</a>
+    {% else %}
+      {% if page.header.git_sync_repo_link %}
+        {% set gitsynclink_url = page.header.git_sync_repo_link %}
+      {% else %}
+        {% set gitsynclink_url = gitsynclink_url ~ ('/' ~ page.filePathClean) | replace({'/user/': '/'}) %}
+      {% endif %}
+      {% if page.children.count %}
+        {% set gitsynclink_url = (gitsynclink_url|replace({('/'~page.template~'.md'):'/'})) %}
+      {% endif %}
+	  {% if config.site.gitsynclink.editlinktext is empty %}
+        {% set gitsynclink_text = 'Edit this Page' %}
+      {% else %}
+        {% set gitsynclink_text = config.site.gitsynclink.editlinktext %}
+      {% endif %}
+      <a class="newwindow external-link" href="{{ gitsynclink_url }}" title="{{ gitsynclink_text }}" target="_blank">
+      <i class="fa fa-{{ gitsynclink_icon }}" aria-hidden="true"></i>
+      {{ gitsynclink_text }}</a>
+    {% endif %}
+  {% endif %}
+{% else %}
+  {% if not (config.plugins['git-sync'].enabled) or (config.plugins['git-sync'].enabled and config.plugins['git-sync'].repository is empty) %}
+    {% set admin_panel_appearance_url = grav.base_url ~ '/admin/plugins/git-sync' %}
+    <a class="newwindow external-link" href="{{ admin_panel_appearance_url }}" title="Setup Git Sync">
+    <i class="fa fa-cog" aria-hidden="true"></i>
+    Setup Git Sync</a>
+  {% else %}
+    {% set git_sync_repo = config.plugins['git-sync'].repository %}
+    {% set git_sync_repo_link = (git_sync_repo | replace({'.git': '/'})) %}
+    {% if 'github' in git_sync_repo_link %}
+      {% set gitsynclink_icon = "github" %}
+      {% set git_repo_edit_link_url = (git_sync_repo|replace({'.git':'/'})) ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+    {% elseif 'gitlab' in git_sync_repo_link %}
+      {% set gitsynclink_icon = "gitlab" %}
+      {% set git_repo_edit_link_url = (git_sync_repo|replace({'.git':'/'})) ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+    {% elseif 'bitbucket' in git_sync_repo_link %}
+      {% set gitsynclink_icon = "bitbucket" %}
+      {% set git_repo_edit_link_url = (git_sync_repo|replace({'.git':'/'})) ~ 'src/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+    {% else %}
+	    {% set gitsynclink_icon = "git" %}
+      {% set git_repo_edit_link_url = (git_sync_repo|replace({'.git':'/'})) ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+	  {% endif %}
+    {% if config.site.gitsynclink.editlinkicon is not empty %}
+        {% set gitsynclink_icon = config.site.gitsynclink.editlinkicon %}
+    {% endif %}
+    {% if config.site.gitsynclink.typeofgitsyncrepolink == 'view' %}
+      {% if config.site.gitsynclink.editlinktext is empty %}
+        {% set gitsynclink_text = 'View Content Repository' %}
+      {% else %}
+        {% set gitsynclink_text = config.site.gitsynclink.editlinktext %}
+      {% endif %}
+      <a class="newwindow external-link" href="{{ git_sync_repo_link}}" title="{{ gitsynclink_text }}" target="_blank">
+      <i class="fa fa-{{ gitsynclink_icon }}" aria-hidden="true"></i>
+      {{ gitsynclink_text }}</a>
+    {% else %}
+      {% if page.children.count %}
+        {% set git_repo_edit_link_url = (git_repo_edit_link_url|replace({('/'~page.template~'.md'):'/'})) %}
+      {% endif %}
+      {% if config.site.gitsynclink.editlinktext is empty %}
+        {% set gitsynclink_text = 'Edit this Page' %}
+      {% else %}
+        {% set gitsynclink_text = config.site.gitsynclink.editlinktext %}
+      {% endif %}
+      <a class="newwindow external-link" href="{{ git_repo_edit_link_url }}" title="{{ gitsynclink_text }}" target="_blank">
+      <i class="fa fa-{{ gitsynclink_icon }}" aria-hidden="true"></i>
+      {{ gitsynclink_text }}</a>
+    {% endif %}
+  {% endif %}
+{% endif %}

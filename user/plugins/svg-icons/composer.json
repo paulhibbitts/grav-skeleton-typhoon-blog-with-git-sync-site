@@ -1,0 +1,29 @@
+{
+  "name": "trilbymedia/svg-icons",
+  "type": "grav-plugin",
+  "description": "Various SVG icons and utilties to use them",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/trilbymedia/grav-plugin-svg-icons",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Trilby Media, LLC",
+      "email": "hello@trilby.media",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\SVGIcons\\": "classes/"
+    },
+    "classmap":  ["svg-icons.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}
