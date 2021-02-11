@@ -1,4 +1,4 @@
-# Typhoon Blog Skeleton
+# Typhoon Blog Skeleton with Inherited Theme
 
 This skeleton serves as a basic content skeleton, with an inherited Typhoon theme, for demonstrating a simple **blog site** with the [Typhoon Grav Premium Theme](https://getgrav.org/premium/typhoon) - this skeleton does not include the Typhoon theme itself.
 
