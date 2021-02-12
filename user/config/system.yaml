@@ -32,7 +32,7 @@ home:
   hide_in_urls: false
 pages:
   type: regular
-  theme: quark
+  theme: mytheme
   order:
     by: default
     dir: asc
