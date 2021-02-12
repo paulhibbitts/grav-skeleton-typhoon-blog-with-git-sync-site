@@ -2,9 +2,9 @@
 
 This skeleton serves as a basic content skeleton, using an inherited Typhoon with Git Sync link theme, for demonstrating a simple **blog site** with the [Typhoon Grav Premium Theme](https://getgrav.org/premium/typhoon) - this skeleton does not include the Typhoon theme itself.
 
-Figure 1. Typhoon Blog Skeleton with Git Sync           |  Figure 2. Typhoon Blog Skeleton with Git Sync link
-:-------------------------:|:-------------------------:
-![](screenshot.jpg)  |  ![](screenshot2.jpg)
+|Figure 1. Typhoon Blog Skeleton with Git Sync           |  Figure 2. Typhoon Blog Skeleton with Git Sync link
+:-------------------------|:-------------------------|
+|![](screenshot.jpg)  |  ![](screenshot2.jpg)|
 
 ## 🚀 Quick Install Instructions
 
