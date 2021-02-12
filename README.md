@@ -2,7 +2,9 @@
 
 This skeleton serves as a basic content skeleton, using an inherited Typhoon with Git Sync link theme, for demonstrating a simple **blog site** with the [Typhoon Grav Premium Theme](https://getgrav.org/premium/typhoon) - this skeleton does not include the Typhoon theme itself.
 
-![](screenshot.jpg)
+Figure 1. Typhoon Blog Skeleton with Git Sync           |  Figure 2. Typhoon Blog Skeleton with Git Sync link
+:-------------------------:|:-------------------------:
+![](screenshot.jpg)  |  ![](screenshot2.jpg)
 
 ## 🚀 Quick Install Instructions
 
@@ -21,4 +23,6 @@ This skeleton serves as a basic content skeleton, using an inherited Typhoon wit
 6. Go to the `License Manager` panel and import your `Typhoon` license
 7. Go to the `Themes` panel, tap on `+Add` and install your now licensed `Typhoon` theme
 8. Return to the `Themes` panel and choose the provided `MyTheme` inherited theme as your Active Theme
-9. And that's it! You can learn more about inherited themes at https://learn.getgrav.org/17/themes/customization#theme-inheritance
+9. And that's it!
+
+You can learn more about inherited themes at https://learn.getgrav.org/17/themes/customization#theme-inheritance
