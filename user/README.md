@@ -15,7 +15,7 @@ This skeleton serves as a basic content skeleton, using an inherited Typhoon wit
 
 1. Download the ready-to-run [Typhoon Blog with Git Sync](https://github.com/paulhibbitts/grav-skeleton-typhoon-blog-with-git-sync-site/archive/main.zip) (which does not include the Grav Premium Typhoon theme)
 2. Unzip the package onto your desktop  
-3. Copy the entire Grav Open Course Hub folder to your Web server  
+3. Copy the entire Typhoon Blog Skeleton with Git Sync folder to your Web server  
 4. Point your browser to the Web server folder  
 5. Create your site administrator account when prompted  
 6. Go to the `License Manager` panel and import your `Typhoon` license.
