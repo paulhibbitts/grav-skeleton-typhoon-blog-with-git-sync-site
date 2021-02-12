@@ -19,7 +19,7 @@ Figure 1. Typhoon Blog Skeleton with Git Sync           |  Figure 2. Typhoon Blo
 2. Unzip the package onto your desktop  
 3. Copy the entire Typhoon Blog Skeleton with Git Sync folder to your Web server  
 4. Point your browser to the Web server folder  
-5. Create your site administrator account when prompted  
+5. Create your site administrator account when prompted (Admin Panel is included)  
 6. Go to the `License Manager` panel and import your `Typhoon` license
 7. Go to the `Themes` panel, tap on `+Add` and install your now licensed `Typhoon` theme
 8. Return to the `Themes` panel and choose the provided `MyTheme` inherited theme as your Active Theme
