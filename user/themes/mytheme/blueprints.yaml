@@ -2,7 +2,7 @@ name: My Typhoon Theme
 version: 1.0.8
 type: theme
 slug: mytyphoontheme
-description: Inherited Git Sync Typhoon with Git Sync link theme utilizing the Tailwind 2 CSS framework
+description: Inherited Git Sync Typhoon with Git Sync theme utilizing the Tailwind 2 CSS framework
 icon: crosshairs
 author:
   name: Paul Hibbitts
