@@ -15,7 +15,7 @@ This skeleton serves as a basic content skeleton, using an inherited Typhoon wit
 
 **Installation Steps**  
 
-1. Download the ready-to-run [Typhoon Blog with Git Sync](https://github.com/paulhibbitts/grav-skeleton-typhoon-blog-with-git-sync-site/archive/main.zip) (which does not include the Grav Premium Typhoon theme)
+1. Download the ready-to-run [Typhoon Blog Skeleton with Git Sync](https://github.com/paulhibbitts/grav-skeleton-typhoon-blog-with-git-sync-site/archive/main.zip) (which does not include the Grav Premium Typhoon theme)
 2. Unzip the package onto your desktop  
 3. Copy the entire Typhoon Blog Skeleton with Git Sync folder to your Web server  
 4. Point your browser to the Web server folder  
